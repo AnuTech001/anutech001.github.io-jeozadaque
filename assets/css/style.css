@@ -58,6 +58,10 @@ a {
   font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
+span {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
 strong {
   color: red;
 }
@@ -92,15 +96,14 @@ footer p {
 
 .icon i {
   margin: clamp(0.5rem, 1vw, 1rem);
-  margin-bottom: 0;
   color: white;
-  font-size: clamp(20px, 4vw, 40px);
+  transition: all 0.5s ease;
 }
 
-.social-icon.whatsapp i,
-.social-icon.outlook i {
+.social-icon.whatsapp,
+.social-icon.outlook {
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* Divs */
@@ -113,16 +116,15 @@ footer p {
 }
 
 .texto-icone {
-  font-size: clamp(10px, 1.5vw, 20px);
   margin: 0;
 }
 
 /* Animações */
 
-.social-icon.whatsapp i:hover {
+.social-icon.whatsapp:hover i{
   color: #25d366;
 }
 
-.social-icon.outlook i:hover {
+.social-icon.outlook:hover i{
   color: #0078d4;
 }
